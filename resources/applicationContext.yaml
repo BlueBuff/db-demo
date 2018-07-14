@@ -1,0 +1,25 @@
+server:
+  name: db-demo
+  host: '127.0.0.1'
+  port: 8088
+  version: 1.0.1
+log:
+  path: ./logs/
+redis:
+  host: '127.0.0.1'
+  port: 6379
+  password: ''
+  db: 0
+dbconfigs:
+   - name: test
+     config:
+      mode: true
+      driver: mysql
+      host: '127.0.0.1'
+      port: 3306
+      username: root
+      password: 123456
+      databasename: test
+      lifetime: 10
+      max-open-num: 5
+      max-idle-num: 5
